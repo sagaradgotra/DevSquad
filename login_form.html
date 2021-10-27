@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Form</title>
+	<title >Login Page </title>
+	<style type="text/css">
+		#password:hover{
+			color: red;
+		}
+		#account:hover{
+			color: red;
+		}
+	</style>
 </head>
 <body>
 	<form>
-		<h2>X COMPANY</h2>
+		<h1 style="color: red; font-family: cursive;">X COMPANY</h1>
 		<div>
-			<label for="username"><strong>Username</strong></label>
+			<label for="username" style="color: black; font-size: 20px; font-family: cursive;"><b>Username</b></label>
 			<br>
-			<input type="email" name="email" id="username" required placeholder="abc@example.com">
+			<input type="email" name="email" id="username" required placeholder="	abc@example.com">
 		</div>
 		<div>
-			<label for="country"><b>Country</b></label>
+			<label style="color: black; font-size: 20px; font-family: cursive;"><b>	Country</b></label>
 			<br>
-			<input type="country" name="country" value="India" required id="country" disabled>
+			<select name="month_selected">
+				<option>India</option>
+				<option>Afganistan</option>
+				<option>Bangladesh</option>
+				<option>Bhutan</option>
+				<option>China</option>
+				<option>Maldives</option>
+				<option>Mayanmar</option>
+				<option>Nepal</option>
+				<option>Sri Lanka</option>
+			</select>
 		</div>
 		<div>
-			<label for="password"><strong>Password</strong></label>
+			<label for="password" style="color: black; font-size: 20px; font-family: cursive;"><b>Password</b></label>
 			<br>
 			<input type="password" name="password" id="password" required>
 		</div>
+		<br>
 		<div>
-			<button type="login"><img src="https://th.bing.com/th/id/R.0c5c1cdaa0e79c266f6602df8b5e41cc?rik=cLseGCPHVcDm5w&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fa%2ft%2fS%2f6%2fk%2fB%2flogin-button-png-hi.png&ehk=6Bj%2fzLN4d5lGDOlAuvHlurJmzrSbv0jdJRko6JaCxtQ%3d&risl=&pid=ImgRaw&r=0" height="25" width="60"></button>
+			<input type="submit" style="color: white; background-color: blue;">
 		</div>
-		<a href="#"> <h5>Forgotten Password?</h5> </a>
-		<p> or </p>
 		<div>
-			<a href="project.html"> <b> <h4>Create New Account</h4></b></a>
+			<a id="password" href="#" style="font-family: cursive;">Forgotten Password</a>
+		</div>
+		<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <strong>Or</strong></p>
+		<div>
+			<a id="account" href="#" style="font-family: cursive;">Create Account</a>
 		</div>
 	</form>
 
